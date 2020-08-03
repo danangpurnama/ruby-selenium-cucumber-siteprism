@@ -57,8 +57,8 @@ Make sure to add your project/company to https://github.com/site-prism/site_pris
 4. Test Data 
     {
         "account_gmail": {
-        "email": "tiket9121@gmail.com",
-        "password": "kd$K0qwK"
+        "email": "email",
+        "password": "password"
         }
     }
 
