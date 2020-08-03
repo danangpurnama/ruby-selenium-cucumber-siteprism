@@ -34,11 +34,13 @@ Make sure to add your project/company to https://github.com/site-prism/site_pris
 
 ### Example
 1. Gerhkin File
+   ```
     Feature: Product Tiket
         Scenario: Book Product hotel
             Given I navigate to login page and login with facebook
             When I try to book hotel for 32 guest and 8 room
             Then I should transaction created and price correct
+    ```
 2. Pages
     class Login < SitePrism::Page
         set_url '/login'
@@ -48,21 +50,27 @@ Make sure to add your project/company to https://github.com/site-prism/site_pris
         element :field_password_fb, 'input[id="pass"]'
     end
 3. Step_defintions
+     ```
     Given('I navigate to login page and login with email') do
         account = File.read("features/testdata/user_acoount.json")
         obj = JSON.parse(account)
         @test_site.login.load
         @test_site.login.login_with_gmail(obj["account_gmail"]["email"], obj["account_gmail"]["password"])
     end
+    ``` 
 4. Test Data 
+    ```
     {
         "account_gmail": {
         "email": "email",
         "password": "password"
         }
     }
+    ```
 
     - Call test data
+    ```
         require "json"
         account = File.read("features/testdata/user_acoount.json")
         obj = JSON.parse(account)
+    ```   
