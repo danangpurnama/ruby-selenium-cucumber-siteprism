@@ -1,0 +1,10 @@
+{
+    "account_gmail": {
+        "email": "email",
+        "password": "password"
+    },
+    "account_fb": {
+        "phone": "email",
+        "password": "password"
+    }
+}
