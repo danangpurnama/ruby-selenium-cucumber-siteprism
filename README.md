@@ -21,6 +21,7 @@ Make sure to add your project/company to https://github.com/site-prism/site_pris
         - Install GeckoDriver (brew install geckodriver)
         - Install ruby (brew install ruby)
 2. Project Dependencies
+   * Dependencies
         - Install bundler (gem install bundler)
         - Install the gems (bundle install)
 
